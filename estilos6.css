@@ -1,0 +1,206 @@
+/*font-family: 'Dancing Script', cursive;*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /*background: linear-gradient(rgb(84, 84, 250),rgb(65, 62, 248),rgb(121, 143, 240));*/
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+}
+.contenedor{
+    width:95%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+.index{
+    margin-bottom: .5rem;
+}
+
+.fa-heart{
+    color:rgb(18, 167, 222);
+    margin-left: 5rem;
+    transition: .5s all ease-in-out;
+    animation: opacidad;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+}
+
+.main-index5{
+    position: absolute;
+    top: 0;
+}
+
+
+.btn{
+    background-color: rgb(18, 167, 222);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.btn:hover{
+    background-color: rgb(26, 121, 0);
+    border: black;
+}
+
+#item0{
+    bottom: 0;
+    left: 3rem;
+    font-size: 4rem;
+}
+#item1{
+    bottom: 0;
+    animation-delay: 1.2s; 
+    font-size: 3rem; 
+}
+#item2{
+    bottom: 0;
+    left: 13rem;
+    animation-delay: .2s;
+    font-size: 4rem;
+}
+#item3{
+    bottom: 0;
+    left: 26rem;
+    animation-delay: .5s;
+    font-size: 5rem;
+}
+#item4{
+    bottom: 0;
+    left: 60rem;
+    animation-delay: 4s;
+    font-size: 4rem;
+}
+#item5{
+    bottom: 0;
+    left: 70rem;
+    animation-delay: 3s;
+    font-size: 3rem;
+}
+#item6{
+    bottom: 0;
+    right:4rem;
+    animation-delay: 3s;
+    font-size: 5rem;
+}
+#item7{
+    bottom: 0;
+    right: 9.5rem;
+    font-size: 2.5rem;
+    animation-delay: .7s;
+}
+#item8{
+    bottom: 0;
+    left: 25rem;
+    animation-delay: .9s;
+    font-size: 3rem;
+}
+#item9{
+    font-size: 3.5rem;
+    bottom: 0;
+    animation-delay: .5s;
+    left: 44rem;
+}
+#item10{
+    font-size: 2rem;
+    bottom: 0;
+    animation-delay: 1.8s;
+    left: 45rem;
+}
+
+@keyframes opacidad {
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+        bottom: 100%;;
+    }
+}
+/*----------ELIMINACION DE PESCADOS-----------*/
+@media (max-width: 1286px){
+    #item5{
+        display: none;
+    }
+}
+@media (max-width:1138px){
+    #item4{
+        bottom: 0;
+        left: 2rem;
+        animation-delay: 2s;
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:872px){
+    #item10, #item9{
+        display: none;
+    }
+}
+
+@media(max-width:602px){
+    #item3{
+        bottom: 0;
+        left: 0rem;
+        animation-delay: .6s;
+        font-size: 5rem;
+    }
+}
+@media(max-width:573px){
+    /*eliminar un pescado*/
+}#item3{
+    display: none;
+}
+
+@media(max-width:552px){
+    #item8{
+        display: none;
+    }
+}
+
+@keyframes desvanecer {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+  }
+
+ 
+  .desaparecer{
+    animation: desvanecer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    
+  }
+  .aparecer{
+    animation: aparecer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  #p,#img,#btn{
+    display: none;
+  }
